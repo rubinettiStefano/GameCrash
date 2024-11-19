@@ -19,7 +19,7 @@ public class DbHelper
 
 
     private DbHelper() {
-        String url = "jdbc:mysql://localhost:3306/gestorepersone";
+        String url = "jdbc:mysql://localhost:3306/gamecrash";
         String username = "jaita";
         String password = "jaita";
 

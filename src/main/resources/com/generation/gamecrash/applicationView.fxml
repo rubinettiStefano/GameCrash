@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.generation.gamecrash.controller.ApplicationController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.generation.gamecrash.controller.ApplicationController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+   <children>
+      <Pane prefHeight="355.0" prefWidth="409.0">
+         <children>
+            <Text fx:id="output" layoutX="273.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Da riempire" />
+            <Button layoutX="15.0" layoutY="13.0" mnemonicParsing="false" onAction="#leggiTutto" text="Leggi tutto" />
+            <TextField fx:id="title" layoutX="14.0" layoutY="159.0" promptText="title" />
+            <TextField fx:id="genre" layoutX="14.0" layoutY="193.0" promptText="genre" />
+            <TextField fx:id="platforms" layoutX="14.0" layoutY="230.0" promptText="platforms" />
+            <TextField fx:id="price" layoutX="14.0" layoutY="268.0" promptText="price" />
+            <Button layoutX="15.0" layoutY="304.0" mnemonicParsing="false" onAction="#inserisci" text="Inserisci" />
+            <Button layoutX="14.0" layoutY="75.0" mnemonicParsing="false" onAction="#acquista" text="Acquista" />
+            <TextField fx:id="id" layoutX="73.0" layoutY="75.0" prefHeight="25.0" prefWidth="39.0" promptText="id" />
+         </children>
+      </Pane>
+   </children>
 </VBox>
